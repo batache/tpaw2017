@@ -26,5 +26,6 @@ width: 789px;
     padding-left:20px;
     padding-right:20px;
     margin-bottom:20px;
+ border: 1px solid rgba(0,0,0,.2);
   
 }
