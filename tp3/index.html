@@ -19,40 +19,60 @@
         <!-- Add your site or application content here -->
         <p>Avec Bootstrap & jQuery</p>
  
-                    
-       <form class="form-inline">
-  <div class="form-group">
-    <label for="nom">Name</label>
-    <input type="text" class="form-control" id="nom" placeholder="Jane Doe">
-  </div>
-           
-    <div class="form-group">
-    <label for="prenom">Prenom</label>
-    <input type="text" class="form-control" id="prenom" placeholder="Jane Doe">
-  </div>        
-  
-            <div class="form-group">
-    <label for="dat">date de naissance</label>
-    <input type="text" class="form-control" id="dat" placeholder="jj/mm/aaaa">
-  </div> 
-           
-           
-           
-            <div class="form-group">
-    <label for="adr">Adresse</label>
-    <input type="text" class="form-control" id="adr" placeholder="09 rue.....">
-  </div>
-           
-  <div class="form-group">
-    <label for="mail">Email</label>
-    <input type="email" class="form-control" id="mail" placeholder="jane.doe@example.com">
-  </div>
-           
-           
-          
-  <button type="submit" class="btn btn-default">Valider</button>
-</form>         
+	<div class="nan">
+	<form name="form1" action="page2.html" method="post">
+
+        <table width="50%">
+		 <tr>
+          <td>  <label for="nom">Nom</label> </td>
+
+           <td> <input type="text" id="nom" name=" nom"/> </td>
+         </tr>
         
+		<tr>
+            <td> <label for="prenom">Pernom</label> </td>
+
+            <td> <input type="text" id="prenom" name="prenom"/>  </td>
+	    </tr>
+         
+		 <tr>
+            <td> <label for="dt">Date de naissance</label> </td>
+
+            <td> <input type="text" id="date" name="date" placeholder="JJ/MM/AAAA"/> </td>
+         </tr>
+        <tr>
+           <td> <label for="adress">Adresse</label></td>
+
+           <td> <input type="text" id="adress" name="adrs"/></td>
+        </tr>
+        <tr>
+           <td>  <label for="mail">Mail</label></td>
+
+            <td> <input type="email" id="mail" name="mail"/></td>
+
+       	</tr>
+		
+		<tr>
+		   <td> </td>
+		    <td> <input id ="button" type="button" value="Valider" onclick="validation();" />
+			
+			</td>
+			
+		</tr>
+		
+	</table>	
+    </form>   
+	
+	</br>
+	
+	     <div id="resultat"> </div>
+	
+	</br>
+		
+	     <div id="error">  </div>
+</div>
+
+	
         
         
         
