@@ -5,27 +5,19 @@ width: 789px;
 
 
 .form-group{
- margin-left:5px;
-    margin-right:85px;
-    width: 76px;
+    margin-left:5px;
+ 
+
 }
 
 
 .form-control{
-  width: 186px;
-    height: 48px;
+    width: 186px;
     border: 1px solid rgba(255,255,255,.4);
- 
     border-radius: 4px;
-    background:#fff; 
-    background-clip: padding-box; 
-    display:block;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size:18px;
-    color:darkgray;
     padding-left:20px;
-    padding-right:20px;
     margin-bottom:20px;
- border: 1px solid rgba(0,0,0,.2);
+ 
   
 }
