@@ -1,32 +1,77 @@
-.form-inline{
-width: 789px;
-
+#error{
+	background:red;
+	 border-width:1px;
+     border-style:solid; 
+     border-color:black;
+     width:50%;
+	 padding:5px;
 }
-
-body{
-  font-family:Georgia;
+body {
+   font-family:Georgia;
    background:url('plans.jpg');
    color:#fff;
-     border: 2 px;
-
+    
 }
 
-
-.form-group{
-    margin-left:5px;
- 
-
+#tit{
+     margin-top:50px;
+    margin-bottom:50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-
-.form-control{
-    width: 186px;
-    border: 2 px solid rgba(0,0,0,.2);
-    border-radius: 4 px;
-    margin-bottom:20 px;
-    background-clip: padding-box; 
+#resultat{
+	background:green;
+	 border-width:1px;
+     border-style:solid; 
+     border-color:black;
+	 color:white;
+     width:50%;
+	 padding:5px;
+}
+.nan {
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 20px;
+    width: 623px;
+    height: 583px;
+    padding:30px;
+    font-size: 144%;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5); 
+    font-family: 'Source Sans Pro', sans-serif;
    
-    display:block;
+}
+label{
+    margin-left:5px;
+    margin-right:85px;
+    width: 76px;
+
+	 
+}
+input {
+    width: 276px;
+    height: 48px;
+    border: 1px solid rgba(255,255,255,.4);
  
-  
+    border-radius: 4px;
+    background:#fff; 
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:18px;
+    color:darkgray;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+}
+
+#button{
+    padding-left:20px;
+    color:darkseagreen;
+     width: 126px;
+    height: 38px;
+    background:green; 
 }
