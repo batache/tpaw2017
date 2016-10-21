@@ -16,7 +16,7 @@ function validation(){
 	  	$('.modal').modal('show');
 	}
     	else if ((nom.length>=5)&&(prenom.length>=5)&& (date.length>=5)&&(adress.length>=5)&& (email.length>=5)){	    
-	    	$(".modal-body").html("Bienvenue jony "+prenom)
+	    	$(".modal-body").html("Bienvenue "+prenom)
 	  	$('.modal').modal('show');
     	}
 	else{
