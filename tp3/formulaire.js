@@ -1,4 +1,7 @@
 function validation(){
+	
+	$('.modal').modal('show');
+	
 	var nom= document.getElementById("nom").value;
 	
 	
