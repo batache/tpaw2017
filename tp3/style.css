@@ -3,6 +3,14 @@ width: 789px;
 
 }
 
+body{
+  font-family:Georgia;
+   background:url('plans.jpg');
+   color:#fff;
+     border: 2 px;
+
+}
+
 
 .form-group{
     margin-left:5px;
