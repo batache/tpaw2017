@@ -3,4 +3,8 @@ background: pink;
 border-width:2px; 
  width:50%;
   border-color:black;
+  border-style:solid; 
+ padding:5px;
+ 
+ 
 }
