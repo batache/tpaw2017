@@ -13,11 +13,11 @@ width: 789px;
 
 .form-control{
     width: 186px;
-    border: 2px solid rgba(255,255,255,.4);
+    border: 2px;
     border-radius: 4px;
-    font-size:18px;
-    padding-left:20px;
-    margin-bottom:20px;
+   
+   
+   
  
   
 }
