@@ -4,7 +4,27 @@ width: 789px;
 }
 
 
-.sr-only{
-font-family:aria-label;
+.form-group{
+ margin-left:5px;
+    margin-right:85px;
+    width: 76px;
+}
 
+
+.form-control{
+  width: 186px;
+    height: 48px;
+    border: 1px solid rgba(255,255,255,.4);
+ 
+    border-radius: 4px;
+    background:#fff; 
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:18px;
+    color:darkgray;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+  
 }
