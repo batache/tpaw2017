@@ -1,20 +1,10 @@
-body{
-background: pink;
-border-width:2px; 
- width:50%;
-  border-color:black;
-  border-style:solid; 
- padding:5px;
- 
-}
+.form-inline{
+width: 789px;
 
-td{
-
-width:150px;
 }
 
 
-.nom{
-width:250px;
+.sr-only{
+font-family:aria-label;
 
 }
