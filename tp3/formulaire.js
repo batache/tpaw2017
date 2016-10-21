@@ -7,7 +7,7 @@ function validation(){
 	
 	var prenom=document.getElementById("prenom").value;
 	var date=document.getElementById("date").value;
-	var adress=document.getElementById("adress").value;
+	var adress=document.getElementById("adr").value;
 	var email=document.getElementById("mail").value;
 	
 	
