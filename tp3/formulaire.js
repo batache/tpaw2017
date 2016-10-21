@@ -20,7 +20,7 @@ function validation(){
 	  	$('.modal').modal('show');
     	}
 	else{
-		$(".modal-body").html("La saisie des champs est obligatoire")
+		$(".modal-body").html("veuillez remplir tous les champs svp!")
 		$('.modal').modal('show');
 	}
 }
