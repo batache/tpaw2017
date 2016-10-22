@@ -23,12 +23,12 @@
        
        <script src="formulaire.js"></script>
       
-	<script>    
-	$( "#date" ).datepicker({
-        dateFormat: "yy-mm-dd"
-        });	   
-		   
-	</script>	   
+	<script type="text/javascript">
+		
+       $(document).ready(function() {
+        $('#date').datepicker({ dateFormat: "yy-mm-dd"});
+         });
+    </script>	   
     </head>
     <body>     
     <div class="container">
@@ -57,7 +57,7 @@
  <div class="form-group">
     <label for="date" class="col-sm-2 control-label">Date de naissance</label>
     <div class="col-sm-10">
-      <input type="date" class="form-control" id="date" placeholder="Saisissez votre date de naissance"/>
+      <input type="text" class="form-control" id="date" placeholder="Saisissez votre date de naissance"/>
     </div>	
  </div>
 		
