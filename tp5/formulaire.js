@@ -1,11 +1,11 @@
 function Validation(){
 
 
-    var nom= document.getElementById("nom").value;   
+    var nom=document.getElementById("nom").value;   
     var prenom=document.getElementById("prenom").value;
     var date=document.getElementById("date").value;
     var adresse=document.getElementById("adresse").value;
-    var email=document.getElementById("mail").value;
+    var email=document.getElementById("email").value;
 
    if(nom == '' || prenom=="" || date=="" || adresse=="" || email=="") {
         $(".modal-body").html("La saisie des champs est obligatoire");
