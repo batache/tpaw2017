@@ -1,4 +1,4 @@
-Validation(){
+function Validation(){
 
 
     var nom= document.getElementById("nom").value;   
