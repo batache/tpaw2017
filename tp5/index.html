@@ -1,23 +1,35 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
+         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>TP3</title>
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <title>Formulaire</title>
 
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+       
+        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+       
+     
+      <script src="formulaire.js"></script>
+      
 
-        
-        <script src="formulaire.js"></script>        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        
 
-         
+          <script>
+     $( function() {
+     $( "#date" ).datepicker();
+    } );
+  </script> 
 
 
     </head>
@@ -67,7 +79,7 @@
                 <button type="button"  class="btn btn-default" onclick="Validation()" >Valider</button>
         </div>
     </div>
-              
+      </form>         
 
         
      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -87,7 +99,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->   
- </form>
+
             
  </div>     
         
