@@ -1,4 +1,18 @@
 body{
-background:gray;
+background-color:gray;
 
+}
+
+table{
+background-color:white;
+
+}
+
+a{
+color:orange;
+}
+
+a:hover{
+
+color:green;
 }
