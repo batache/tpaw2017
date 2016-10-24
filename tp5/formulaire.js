@@ -9,7 +9,7 @@ function Validation(){
     var email=document.getElementById("email").value;
     
     
-    if(nom == '' || prenom=="" || date=="" || adresse=="" || email=="") {
+    if(nom =='' || prenom=='' || date=='' || adresse=='' || email=='') {
         $(".modal-body").html("La saisie des champs est obligatoire")
           $('.modal').modal('show');
     }
