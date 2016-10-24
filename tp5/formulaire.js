@@ -2,7 +2,7 @@ function Validation(){
     
     
     
-    var nom= document.getElementById("nom").value;    
+    var nom= document.getElementById("nom").value;
     
     var prenom=document.getElementById("prenom").value;
     var date=document.getElementById("date").value;
@@ -10,9 +10,8 @@ function Validation(){
     var email=document.getElementById("email").value;
     
     
-    
-    if(nom =="" || prenom=="" || date=="" || adresse=="" || email=="") {
-          $(".modal-body").html("La saisie des champs est obligatoire")
+    if(nom == '' || prenom=="" || date=="" || adresse=="" || email=="") {
+        $(".modal-body").html("La saisie des champs est obligatoire")
           $('.modal').modal('show');
     }
        else if ((nom.length>=5)&&(prenom.length>=5)&& (date.length>=5)&&(adresse.length>=5)&& (email.length>=5)){        
