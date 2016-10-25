@@ -13,7 +13,7 @@ function Validation(){
                $('.modal').modal('show');
     }
        else if ((nom.length>=5)&&(prenom.length>=5)&& (date.length>=5)&&(adresse.length>=5)&& (email.length>=5)){        
-              $(".modal-body").html('<img src="https://www.google.fr/maps/@48.9574,2.3441015,14z"/>')
+              $(".modal-body").html('<img src="https://maps.googleapis.com/maps/api/staticmap?center=Berkeley,CA&zoom=14&size=400x400"/>')
                $('.modal').modal('show');
        }
     else{
