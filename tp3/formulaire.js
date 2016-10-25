@@ -8,7 +8,7 @@ function Validation(){
     
     
     
-    if(nom =="" || prenom=="" || date=="" || adresse=="" || email=="") {
+    if(nom =="" || date=="" || adresse=="" || email=="") {
                $(".modal-body").html("La saisie des champs est obligatoire")
                $('.modal').modal('show');
     }
