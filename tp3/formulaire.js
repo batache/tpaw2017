@@ -13,7 +13,7 @@ function Validation(){
                $('.modal').modal('show');
     }
        else if ((nom.length>=5)&&(prenom.length>=5)&& (date.length>=5)&&(adresse.length>=5)&& (email.length>=5)){        
-              $(".modal-body").html("BRAVO")
+               $(".modal-body").html('<img src="http://jqueryui.com/jquery-wp-content/themes/jquery/content/books/jquery-ui-in-action.jpg"/>')
                $('.modal').modal('show');
        }
     else{
