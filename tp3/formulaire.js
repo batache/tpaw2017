@@ -1,4 +1,4 @@
-function validation(){
+function Validation(){
     
     
     
@@ -15,7 +15,7 @@ function validation(){
           $('.modal').modal('show');
     }
        else if ((nom.length>=5)&&(prenom.length>=5)&& (date.length>=5)&&(adresse.length>=5)&& (email.length>=5)){        
-              $(".modal-body").html('<img src="https://maps.googleapis.com/maps/api/staticmap?center='+adresse+'&zoom=13&size=300x300&maptype=roadmap&markers='+adresse+'"/>');
+                $(".modal-body").html('<img src="https://maps.googleapis.com/maps/api/staticmap?center='+adresse+'&zoom=13&size=300x300&maptype=roadmap&markers='+adresse+'"/>');
             $('.modal').modal('show');
        }
     else{
