@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
+      <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP4</title>
+        <title>TP3</title>
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,13 +12,104 @@
         <!-- Place favicon.ico in the root directory -->
         
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         
+           <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+         <link rel="stylesheet" href="/resources/demos/style.css">       
+         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+       
+        <script src="formulaire.js"></script>
+        
+              
+        <script type="text/javascript">
+             $(document).ready(function() {
+             $('#date').datepicker({ dateFormat: "yy-mm-dd"});
+          });
+        </script>
+         
     </head>
-    <body>        
-        <h1>TP4</h1>
+   
+    
+<body>     
+    <div class="container">
+        
+        <h1><b>TP4 AW-Formulaire v2</b></h1>
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+        <p>satage la vie simple 20 ans roufeida khokho</p>
+ <form class="form-horizontal">
+        
+    <div class="form-group">
+          <label for="nom" class="col-sm-2 control-label">Nom</label>
+          <div class="col-sm-10">
+             <input type="text" class="form-control" id="nom" placeholder="Saisissez votre nom"/>
+          </div>
+    </div>
+        
+    <div class="form-group">
+         <label for="prenom" class="col-sm-2 control-label">Prénom</label>
+         <div class="col-sm-10">
+             <input type="text" class="form-control" id="prenom" placeholder="Saisissez votre prénom"/>
+         </div>        
+    </div>
+        
+    <div class="form-group">
+         <label for="date" class="col-sm-2 control-label">Date de naissance</label>
+         <div class="col-sm-10">
+              <input type="defaultDate" class="form-control" id="date" placeholder="Saisissez votre date de naissance"/>
+    
+         </div>    
+     </div>
+        
+    <div class="form-group">
+        <label for="adresse" class="col-sm-2 control-label">Adresse</label>
+         <div class="col-sm-10">
+              <input type="text" class="form-control" id="adresse" placeholder="Saisissez votre adresse" width="150px"/>
+     
+         </div>     
+    </div>    
+
+  <div class="form-group">
+      <label for="email" class="col-sm-2 control-label">Mail</label>
+      <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" placeholder="saisissez votre mail">
+     </div>
+  </div>
+ 
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="button" class="btn btn-default" onclick="Validation()">Sign in</button>
+    </div>
+  </div>
+</form>
+    
+       <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    
+      <div class="modal-content">
+        
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+        
+      <div class="modal-body">
+      
+      </div>
+          
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+          
+    </div>
+      
+  </div>
+</div>
+        
+ </div> 
+         
     </body>
 </html>
