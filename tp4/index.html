@@ -38,10 +38,10 @@ var x = document.getElementById("demo");
 
 function getLocation() {
     if (navigator.geolocation) {
-         document.getElementById("adresse").innerHTML=navigator.geolocation.getCurrentPosition(showPosition, showError);
+         navigator.geolocation.getCurrentPosition(showPosition, showError);
     } else {
         
-        document.getElementById("adresse").innerHTML = "Geolocation is not supported by this browser.";
+        x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
 
