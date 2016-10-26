@@ -40,10 +40,9 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var latlon = position.coords.latitude + ":" + position.coords.longitude;
    $('#adresse').val(latlon);
-    var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
-    +latlon+"&zoom=14&size=400x300&sensor=false&markers="+latlon+";
+    var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=13&size=300x300&maptype=roadmap&markers="+latlon+"";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 }
 
