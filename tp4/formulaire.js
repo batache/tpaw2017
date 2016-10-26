@@ -24,10 +24,8 @@ function Validation(){
 
 }
 
-     var x = document.getElementById("demo");
- 
+var x = document.getElementById("demo");
 function getLocation() {
-      
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
     } else {
@@ -36,11 +34,10 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    var latlon = position.coords.latitude + ":" + position.coords.longitude;
-   $('#adresse').val(latlon);
-   
-	var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-    +latlon+"&markers="+latlon+"&zoom=14&size=400x300&sensor=false";
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+	$("#adresse").val(latlon);
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&markers="+latlon+"&zoom=14&size=400x200&sensor=false";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 }
 
@@ -59,6 +56,11 @@ function showError(error) {
             x.innerHTML = "An unknown error occurred."
             break;
     }
-}
-  
+
+
+}	
+     
+	
+
+
 
