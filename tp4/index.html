@@ -41,8 +41,7 @@ function getLocation() {
 
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
-    document.getElementById("adresse").innerHTML="lati " + position.coords.latitude + 
-    "long: " + position.coords.longitude;
+   $(addresse).val=latlon;
     var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
     +latlon+"&zoom=14&size=400x300&sensor=false";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
