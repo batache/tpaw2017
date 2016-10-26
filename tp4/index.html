@@ -14,10 +14,7 @@
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-        
-       
-       
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
         
         <script src="formulaire.js"></script> 
         
@@ -31,6 +28,7 @@
              $('#date').datepicker({ dateFormat: "yy-mm-dd"});
           });
         </script>
+	    
     <script>     
 var x = document.getElementById("demo");
 
@@ -44,7 +42,7 @@ function getLocation() {
 
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
-     document.getElementById("adresse").innerHTML  = "bravot"
+     document.getElementById("adresse").innerHTML  = latlon;
     var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
     +latlon+"&zoom=14&size=400x300&sensor=false";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
