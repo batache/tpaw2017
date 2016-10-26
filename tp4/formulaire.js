@@ -20,10 +20,8 @@ function Validation(){
                $(".modal-body").html("veuillez remplir tous les champs svp!")
                $('.modal').modal('show');
     }
-}
 
 
-<script>
 var x = document.getElementById("demo");
 
 function getLocation() {
@@ -58,7 +56,7 @@ function showError(error) {
             break;
     }
 }
-</script>
+}
 
 
 
