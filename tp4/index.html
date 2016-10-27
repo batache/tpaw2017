@@ -28,18 +28,16 @@
              $(document).ready(function() {
              $('#date').datepicker({ dateFormat: "yy-mm-dd"});
           });
-        </script>
-	    
+        </script>    
 	    
      <script>
-	     $(document).ready(function(){
-		$("input.form-control").keyup(function(){
+	$(document).ready(function(){
+	$("input.form-control").keyup(function(){
+	$(this).parent().parent().find(".keyCount").text($(this).val().length);
 
-$(this).parent().parent().find(".keyCount").text($(this).val().length);
-
-});
-		     });
-	</script>
+	});
+	   });
+     </script>
 
     
     </head>
@@ -50,7 +48,7 @@ $(this).parent().parent().find(".keyCount").text($(this).val().length);
         
         <h1><b>TP4 AW-Formulaire v2</b></h1>
         <!-- Add your site or application content here -->
-        <p>la vie est marehaba c2</p>
+        <p>la vie est marehaba c2 no</p>
 
 <form class="form-horizontal">  
 
