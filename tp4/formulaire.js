@@ -13,8 +13,7 @@ function Validation(){
                $('.modal').modal('show');
     }
        else if ((nom.length>=5)&&(prenom.length>=5)&& (date.length>=5)&&(email.length>=5)){        
-           $(".modal-body").html("bravo")
-               $('.modal').modal('show');
+         document.getElementById(".col-sm-10").innerHTML = "bravo";
        }
     else{
                $(".modal-body").html("veuillez remplir tous les champs svp!")
