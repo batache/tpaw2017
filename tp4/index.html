@@ -32,11 +32,13 @@
 	    
 	    
      <script>
+	     $(document).ready(function(){
 		$("input.form-control").keyup(function(){
 
 $(this).parent().parent().find(".keyCount").text($(this).val().length);
 
 });
+		     });
 	</script>
 
     
