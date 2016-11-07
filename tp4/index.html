@@ -37,7 +37,33 @@
 	});
 	   });
      </script>
-
+   	
+	    <script>
+	    
+		     if(typeof(Storage) !== "undefined") {
+			      if (localStorage.Validation()) {
+				      localStorage.a = document.getElementById("nom");
+	    				localStorage.b = document.getElementById("prenom");
+				      localStorage.c = document.getElementById("adresse");
+				      localStorage.d = document.getElementById("date");
+				      localStorage.e = document.getElementById("email");
+				      
+				    var nom = localStorage.getItem("a");
+				      var prenom = localStorage.getItem("b");
+				      var adresse = localStorage.getItem("c");
+				      var date = localStorage.getItem("d");
+				      var email = localStorage.getItem("e");
+			      } else{
+				     document.getElementById("result").innerHTML = "You have clicked the button " 
+			   }else{
+			   
+			   	document.getElementById("result").innerHTML = "You have clicked the button "
+			   }
+		     }
+	    
+	    
+	    
+	    </script>
     
     </head>
    
