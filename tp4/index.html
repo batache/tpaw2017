@@ -42,18 +42,20 @@
 	    function Validation() {
 		     if(typeof(Storage) !== "undefined") {
 			      if (localStorage.Validation) {
-				      localStorage.setItem("a", "nom");
-				      localStorage.setItem("b", "prenom");
-				      localStorage.setItem("c", "adresse");
-				      localStorage.setItem("d", "date");
-				      localStorage.setItem("e", "email");
+				
 				      
 				     				      
-				      var nom = localStorage.getItem("a");
-				      var prenom = localStorage.getItem("b");
-				      var adresse = localStorage.getItem("c");
-				      var date = localStorage.getItem("d");
-				      var email = localStorage.getItem("e");
+				      var nom = localStorage.getItem("nom");
+				      var prenom = localStorage.getItem("prenom");
+				      var adresse = localStorage.getItem("adresse");
+				      var date = localStorage.getItem("date");
+				      var email = localStorage.getItem("email");
+				      
+				      localStorage.setItem("nom", "nom");
+				      localStorage.setItem("prenom", "prenom");
+				      localStorage.setItem("adresse", "adresse");
+				      localStorage.setItem("date", "date");
+				      localStorage.setItem("email", "email");
 				      
 				       document.getElementById("result").innerHTML ="afficher"+" "+nom+" "+prenom+" "+adresse+" "+date+" "+email; 
 			      } else{
