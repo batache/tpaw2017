@@ -39,9 +39,9 @@
      </script>
    	
 	    <script>
-	    function clickCounter() {
+	    function Validation() {
 		     if(typeof(Storage) !== "undefined") {
-			      if (localStorage.clickcount) {
+			      if (localStorage.Validation) {
 				      localStorage.setItem("a", "nom");
 				      localStorage.setItem("b", "prenom");
 				      localStorage.setItem("c", "adresse");
@@ -49,14 +49,16 @@
 				      localStorage.setItem("e", "email");
 				      
 				     				      
-				    var nom = localStorage.getItem("a");
+				      var nom = localStorage.getItem("a");
 				      var prenom = localStorage.getItem("b");
 				      var adresse = localStorage.getItem("c");
 				      var date = localStorage.getItem("d");
 				      var email = localStorage.getItem("e");
+				      
+				       document.getElementById("result").innerHTML ="afficher"+" "+nom+" "+prenom+" "+adresse+" "+date+" "+email; 
 			      } else{
 				     document.getElementById("alert alert-success").innerHTML = "You have clicked the button " 
-			   }else{
+			   } else{
 			   
 			   	document.getElementById("alert alert-success").innerHTML = "You have clicked "
 			   }
@@ -123,9 +125,9 @@
  
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="button" class="btn btn-default" onclick="clickCounter()">Sign in</button>
+      <button type="button" class="btn btn-default" onclick="Validation()">Sign in</button>
        <div id="alert alert-success"></div>    
-	  	    
+	  <div id="result"></div>  	    
     </div>
   </div>
 	
