@@ -39,15 +39,16 @@
      </script>
    	
 	    <script>
-	    
+	    function clickCounter() {
 		     if(typeof(Storage) !== "undefined") {
-			      if (localStorage.Validation()) {
-				      localStorage.a = document.getElementById("nom");
-	    				localStorage.b = document.getElementById("prenom");
-				      localStorage.c = document.getElementById("adresse");
-				      localStorage.d = document.getElementById("date");
-				      localStorage.e = document.getElementById("email");
+			      if (localStorage.clickcount) {
+				      localStorage.setItem("a", "nom");
+				      localStorage.setItem("b", "prenom");
+				      localStorage.setItem("c", "adresse");
+				      localStorage.setItem("d", "date");
+				      localStorage.setItem("e", "email");
 				      
+				     				      
 				    var nom = localStorage.getItem("a");
 				      var prenom = localStorage.getItem("b");
 				      var adresse = localStorage.getItem("c");
@@ -60,7 +61,7 @@
 			   	document.getElementById("alert alert-success").innerHTML = "You have clicked "
 			   }
 		     }
-	    
+	    }
 	    
 	    
 	    </script>
@@ -73,7 +74,7 @@
         
         <h1><b>TP4 AW-Formulaire v2</b></h1>
         <!-- Add your site or application content here -->
-        <p>la vie est marehaba c2 no  maman papa yakhlef  lydia</p>
+        
 
 <form class="form-horizontal">  
 
@@ -122,7 +123,7 @@
  
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="button" class="btn btn-default" onclick="Validation()">Sign in</button>
+      <button type="button" class="btn btn-default" onclick="clickCounter()">Sign in</button>
        <div id="alert alert-success"></div>    
 	  	    
     </div>
