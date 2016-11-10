@@ -40,8 +40,8 @@
    	
 	    <script>
 	    function Validation() {
-		     if(typeof(Storage) !== "undefined") {
-			      if (localStorage.Validation) {
+		    // if(typeof(Storage) !== "undefined") {
+			     // if (localStorage.Validation) {
 				
 				      
 				     				      
@@ -51,20 +51,13 @@
 				      var date = localStorage.getItem("date");
 				      var email = localStorage.getItem("email");
 				      
-				      localStorage.setItem("nom", "nom");
-				      localStorage.setItem("prenom", "prenom");
-				      localStorage.setItem("adresse", "adresse");
-				      localStorage.setItem("date", "date");
-				      localStorage.setItem("email", "email");
+				      localStorage.setItem("a", "nom");
+				      localStorage.setItem("b", "prenom");
+				      localStorage.setItem("c", "adresse");
+				      localStorage.setItem("d", "date");
+				      localStorage.setItem("e", "email");
 				      
-				       document.getElementById("result").innerHTML ="afficher"+" "+nom+" "+prenom+" "+adresse+" "+date+" "+email; 
-			      } else{
-				     document.getElementById("alert alert-success").innerHTML = "You have clicked the button " 
-			   } else{
-			   
-			   	document.getElementById("alert alert-success").innerHTML = "You have clicked "
-			   }
-		     }
+			
 	    }
 	    
 	    
